@@ -7,7 +7,7 @@ class StatusPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Center(
       child: new Text(
-        'Status',
+        'No Status Available',
         style: TextStyle(fontSize: 22.0, fontFamily: 'Roboto'),
       ),
     );

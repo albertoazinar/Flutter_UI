@@ -7,7 +7,7 @@ class CallsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Center(
       child: new Text(
-        'Calls',
+        'No call history',
         style: TextStyle(fontSize: 22.0, fontFamily: 'Roboto'),
       ),
     );

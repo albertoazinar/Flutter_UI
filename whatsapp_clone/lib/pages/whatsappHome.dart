@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/pages/calls.dart';
 import 'package:whatsapp_clone/pages/camera_page.dart';
@@ -43,7 +44,11 @@ class _WhatsappHomeState extends State<WhatsappHome> with TickerProviderStateMix
             )
           ],
         ),
-        actions: <Widget>[new Icon(Icons.search), new Icon(Icons.more_horiz)],
+        actions: <Widget>[new Icon(Icons.search),
+          new Padding(
+            padding: const EdgeInsets.symmetric(horizontal:8.0)
+          ),
+          new Icon(Icons.more_vert)],
       ),
       body: TabBarView(
         controller: _tabController,
