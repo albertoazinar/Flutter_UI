@@ -1,0 +1,3 @@
+[submodule "whatsapp_clone/Flutter_UI/other"]
+	path = whatsapp_clone/Flutter_UI/other
+	url = https://github.com/AlbertoYabeda/Flutter_UI.git
