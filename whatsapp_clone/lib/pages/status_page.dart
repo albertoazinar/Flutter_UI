@@ -7,10 +7,10 @@ class StatusPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return new ListView.builder(
       itemCount: randomStatus.length,
         itemBuilder: (context,index)=> (
-
         Column(
           children: <Widget>[
             new Padding(padding: EdgeInsets.only(top: 1)),

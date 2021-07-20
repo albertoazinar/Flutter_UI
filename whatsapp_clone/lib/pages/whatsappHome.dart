@@ -14,10 +14,18 @@ class WhatsappHome extends StatefulWidget {
 
 class _WhatsappHomeState extends State<WhatsappHome> with TickerProviderStateMixin{
   TabController? _tabController;
+  var selectedTab;
   @override
   void initState(){
     super.initState();
     _tabController = new TabController(vsync: this,initialIndex: 1,length: 4);
+    _tabController!.addListener(() {onTapTab();});
+  }
+
+  void onTapTab(){
+    setState(() {
+      selectedTab = _tabController!.index;
+    });
   }
 
   @override
@@ -52,6 +60,7 @@ class _WhatsappHomeState extends State<WhatsappHome> with TickerProviderStateMix
       ),
       body: TabBarView(
         controller: _tabController,
+
         children: [
           CameraPage(),
           ChatsPage(),
@@ -59,14 +68,14 @@ class _WhatsappHomeState extends State<WhatsappHome> with TickerProviderStateMix
           CallsPage(),
         ],
       ),
-      floatingActionButton: new FloatingActionButton(
+      floatingActionButton: selectedTab == 1 ? new FloatingActionButton(
         backgroundColor: Theme.of(context).accentColor,
           child: new Icon(
               Icons.message,
             color: Colors.white,
           ),
           onPressed: ()=>{print('clicked new chat!'),
-          }),
+          }) : null
     );
   }
 }
