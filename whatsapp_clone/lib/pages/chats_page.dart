@@ -13,7 +13,6 @@ class ChatsPage extends StatefulWidget {
 class _ChatsPageState extends State<ChatsPage> {
   @override
   Widget build(BuildContext context) {
-    _newChatButton();
     return new ListView.builder(
       itemCount: randomData.length,
         itemBuilder:(context,index) => (
@@ -59,15 +58,6 @@ class _ChatsPageState extends State<ChatsPage> {
     );
   }
 
-  Widget _newChatButton() => Container(
-    child: new FloatingActionButton(
-        backgroundColor: Theme.of(context).accentColor,
-        child: new Icon(
-          Icons.message,
-          color: Colors.white,
-        ),
-        onPressed: ()=>{print('clicked new chat!'),
-        }),
-  );
+
 }
 

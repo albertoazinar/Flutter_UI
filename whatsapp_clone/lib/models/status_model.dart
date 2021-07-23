@@ -11,6 +11,12 @@ class StatusModel{
   });
 }
 
+var myStatus = new StatusModel(
+    name: "My Status",
+    timePosted: "just now",
+    imageUrl: "https://recipe-graphics.grocerywebsite.com/0_GraphicsRecipes/4589_4k.jpg"
+);
+
 List<StatusModel> randomStatus = [
   new StatusModel(
       name: "Algy Jr",

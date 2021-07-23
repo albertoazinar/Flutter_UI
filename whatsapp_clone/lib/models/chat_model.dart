@@ -23,7 +23,7 @@ class ChatModel {
         name: "nozotrox",
         time: "5:00 AM",
         message: "wassap",
-        imageUrl: "https://scontent.fmpm4-1.fna.fbcdn.net/v/t1.6435-9/74537374_126078472139953_7181774648554553344_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=HlcLG8dow8sAX8go654&tn=vi1UAyzmJOITeB7i&_nc_ht=scontent.fmpm4-1.fna&oh=0575e8bdb6c90d2b8d11fa4f449cd7a8&oe=60F83B65"),
+        imageUrl: "https://i.pinimg.com/474x/44/5c/25/445c252c579f2c8ccea6ab6cecfb00e6.jpg"),
     new ChatModel(
         name: "Flutter Comunity",
         time: "5:00 AM",
